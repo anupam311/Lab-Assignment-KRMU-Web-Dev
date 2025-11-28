@@ -1,4 +1,4 @@
-/* ======== GLOBAL ======== */
+
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +32,6 @@ section {
     padding: 8px 18px;
 }
 
-/* ======== HEADER ======== */
 .header {
     display: flex;
     justify-content: space-between;
@@ -55,7 +54,6 @@ section {
     color: #1a1a1a;
 }
 
-/* ======== HERO ======== */
 .hero {
     display: flex;
     align-items: center;
@@ -71,7 +69,6 @@ section {
     border-radius: 10px;
 }
 
-/* ======== TRUSTED ======== */
 .trusted {
     text-align: center;
     background: #fff;
@@ -85,7 +82,6 @@ section {
     filter: grayscale(1);
 }
 
-/* ======== FEATURES ======== */
 .features .grid {
     margin-top: 40px;
     display: grid;
@@ -105,7 +101,6 @@ section {
     transform: translateY(-5px);
 }
 
-/* ======== HOW IT WORKS ======== */
 .how .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -124,7 +119,6 @@ section {
     margin-bottom: 10px;
 }
 
-/* ======== PRICING ======== */
 .pricing .grid {
     margin-top: 40px;
     display: grid;
@@ -163,7 +157,6 @@ section {
     color: #0066ff;
 }
 
-/* ======== TESTIMONIALS ======== */
 .testimonials .grid {
     margin-top: 40px;
     display: grid;
@@ -186,7 +179,6 @@ section {
     margin-bottom: 15px;
 }
 
-/* ======== NEWSLETTER ======== */
 .newsletter form {
     display: flex;
     justify-content: center;
@@ -201,7 +193,6 @@ section {
     border-radius: 6px;
 }
 
-/* ======== CONTACT ======== */
 .contact .grid {
     display: grid;
     gap: 40px;
@@ -221,7 +212,6 @@ section {
     height: 120px;
 }
 
-/* ======== FOOTER ======== */
 .footer {
     background: #111;
     color: #fff;
@@ -247,7 +237,6 @@ section {
     color: #aaa;
 }
 
-/* ======== RESPONSIVE ======== */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
