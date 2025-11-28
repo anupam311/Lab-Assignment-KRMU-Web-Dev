@@ -1,0 +1,264 @@
+/* ======== GLOBAL ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background: #f8f8f8;
+    color: #1a1a1a;
+}
+
+h1, h2, h3 { font-weight: 700; }
+
+section {
+    padding: 70px 8%;
+}
+
+.btn {
+    background: #0066ff;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn.small {
+    padding: 8px 18px;
+}
+
+/* ======== HEADER ======== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 10;
+}
+
+.header ul {
+    display: flex;
+    gap: 25px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+/* ======== HERO ======== */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero img {
+    width: 450px;
+    border-radius: 10px;
+}
+
+/* ======== TRUSTED ======== */
+.trusted {
+    text-align: center;
+    background: #fff;
+}
+
+.trusted-logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    filter: grayscale(1);
+}
+
+/* ======== FEATURES ======== */
+.features .grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.features .card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.features .card:hover {
+    transform: translateY(-5px);
+}
+
+/* ======== HOW IT WORKS ======== */
+.how .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.step span {
+    display: inline-block;
+    background: #0066ff;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+/* ======== PRICING ======== */
+.pricing .grid {
+    margin-top: 40px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.price-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.price-card.featured {
+    border-color: #0066ff;
+}
+
+.price-card:hover {
+    border-color: #0066ff;
+}
+
+.price-card ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.price-card li {
+    margin: 8px 0;
+}
+
+.price {
+    font-size: 28px;
+    color: #0066ff;
+}
+
+/* ======== TESTIMONIALS ======== */
+.testimonials .grid {
+    margin-top: 40px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.review {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.review img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* ======== NEWSLETTER ======== */
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.newsletter input {
+    padding: 12px;
+    width: 280px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+}
+
+/* ======== CONTACT ======== */
+.contact .grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+/* ======== FOOTER ======== */
+.footer {
+    background: #111;
+    color: #fff;
+    padding: 50px 8%;
+}
+
+.footer-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.footer a {
+    color: #bbb;
+    text-decoration: none;
+    display: block;
+    margin: 8px 0;
+}
+
+.copy {
+    text-align: center;
+    margin-top: 30px;
+    color: #aaa;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .header ul {
+        display: none;
+    }
+}
